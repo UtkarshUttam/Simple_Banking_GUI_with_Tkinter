@@ -333,7 +333,7 @@ def logout(master):
 #this checks login credentials
 def check_log_in(master,name,acc_num,pin):
 	if(check_acc_nmb(acc_num)==0):
-		#master.destroy()
+		master.destroy()
 		MainMenu()
 		return
 	if( (is_number(name))  or (is_number(pin)==0) ):
